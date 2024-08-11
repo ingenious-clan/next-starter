@@ -5,7 +5,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 const config = {
   darkMode: ["class"],
   content: [
-    'node_modules/@camped-ui/**/*.{js,ts,jsx,tsx}',
+    "node_modules/@camped-ui/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./ui/**/*.{ts,tsx}",
