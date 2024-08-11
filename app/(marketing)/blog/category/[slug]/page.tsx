@@ -1,10 +1,10 @@
-import { allPosts } from "contentlayer/generated";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { allPosts } from "contentlayer/generated";
 
-import { BlogCard } from "@/components/content/blog-card";
 import { BLOG_CATEGORIES } from "@/config/blog";
 import { constructMetadata } from "@/lib/utils";
+import { BlogCard } from "@/components/content/blog-card";
 
 export async function generateStaticParams() {
   return BLOG_CATEGORIES.map((category) => ({

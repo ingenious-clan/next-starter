@@ -25,14 +25,7 @@ export function constructMetadata({
   return {
     title,
     description,
-    keywords: [
-      "Next.js",
-      "React",
-      "Auth.js",
-      "shadcn ui",
-      "React Email",
-      "Stripe",
-    ],
+    keywords: ["Next.js", "React", "Auth.js", "React Email", "Stripe"],
     authors: [
       {
         name: "yokesh",
@@ -82,8 +75,9 @@ export function absoluteUrl(path: string) {
 // Utils from precedent.dev
 export const timeAgo = (timestamp: Date, timeOnly?: boolean): string => {
   if (!timestamp) return "never";
-  return `${ms(Date.now() - new Date(timestamp).getTime())}${timeOnly ? "" : " ago"
-    }`;
+  return `${ms(Date.now() - new Date(timestamp).getTime())}${
+    timeOnly ? "" : " ago"
+  }`;
 };
 
 export async function fetcher<JSON = any>(

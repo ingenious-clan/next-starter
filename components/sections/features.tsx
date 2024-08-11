@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { features } from "@/config/landing";
-import { Button } from "@/components/ui/button";
+import { Button } from "@camped-ui/button";
 import { HeaderSection } from "@/components/shared/header-section";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
@@ -43,7 +43,6 @@ export default function Features() {
                       <Button
                         variant="secondary"
                         size="sm"
-                        rounded="xl"
                         className="px-4"
                       >
                         <Link href="/" className="flex items-center gap-2">

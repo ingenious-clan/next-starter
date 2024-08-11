@@ -1,6 +1,6 @@
-import { Post } from "contentlayer/generated";
 import Image from "next/image";
 import Link from "next/link";
+import { Post } from "contentlayer/generated";
 
 import { cn, formatDate } from "@/lib/utils";
 
@@ -58,7 +58,7 @@ export function BlogCard({
 
           <div className="flex items-center -space-x-2">
             {data.authors.map((author) => (
-              <Author username={author} key={data._id+author} imageOnly />
+              <Author username={author} key={data._id + author} imageOnly />
             ))}
           </div>
 

@@ -5,7 +5,7 @@ const site_url = process.env.NEXT_PUBLIC_APP_URL || "";
 export const siteConfig: SiteConfig = {
   name: "IngeniousClan",
   description:
-    "Get your project off to an explosive start with IngeniousClan! Harness the power of Next.js 14 and Shadcn/ui to build your next big thing.",
+    "Get your project off to an explosive start with IngeniousClan! Harness the power of Next.js 14 and campEd-ui to build your next big thing.",
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   mailSupport: "hello@ingeniousclan.com",

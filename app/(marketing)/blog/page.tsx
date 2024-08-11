@@ -1,8 +1,8 @@
 import { allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 
-import { BlogPosts } from "@/components/content/blog-posts";
 import { constructMetadata } from "@/lib/utils";
+import { BlogPosts } from "@/components/content/blog-posts";
 
 export const metadata = constructMetadata({
   title: "Blog – IngeniousClan",
@@ -16,6 +16,6 @@ export default async function BlogPage() {
       return compareDesc(new Date(a.date), new Date(b.date));
     });
 
-  if (posts?.length === 0) return null
+  if (posts?.length === 0) return null;
   return <BlogPosts posts={posts} />;
 }
